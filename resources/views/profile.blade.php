@@ -22,6 +22,14 @@
             border-radius: 50%;
             background-color: #e0e0e0;
             margin-bottom: 20px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-image img {
+            width: 100%;
+            height: auto;
         }
         .profile-info {
             margin: 10px 0;
@@ -40,7 +48,8 @@
         <div class="profile-container">
             <!-- Gambar Profil -->
             <div class="profile-image">
-                <img src="https://via.placeholder.com/150" alt="Profile Image" class="img-fluid rounded-circle">
+                <!-- Ganti URL gambar di sini dengan fotomu -->
+                <img src="{{ asset('images/foto-saya.jpg') }}" alt="Profile Image">
             </div>
 
             <!-- Informasi Profil -->
