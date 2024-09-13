@@ -21,7 +21,7 @@
             height: 150px;
             border-radius: 50%;
             background-color: #e0e0e0;
-            margin-bottom: 20px;
+            margin: 0 auto 20px auto; /* Gambar akan terpusat */
             overflow: hidden;
             display: flex;
             justify-content: center;
