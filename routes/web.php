@@ -8,15 +8,16 @@ use App\Http\Controllers\ProfileController;
 | Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+| Ini adalah tempat di mana kamu bisa mendaftarkan route web untuk aplikasi.
+| Route ini akan dimuat oleh RouteServiceProvider dalam grup yang
+| berisi middleware "web".
 |
 */
 
-// Route untuk halaman welcome (default route)
+// Route untuk halaman utama (welcome)
 Route::get('/', function () {
     return view('welcome');
 });
 
+// Route untuk halaman profil pengguna
 Route::get('/profile', [ProfileController::class, 'showProfile'])->name('profile');

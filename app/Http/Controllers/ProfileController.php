@@ -8,12 +8,14 @@ class ProfileController extends Controller
 {
     public function showProfile()
     {
-        // Data profil yang akan ditampilkan
-        $nama = "Nama Lengkap"; 
-        $kelas = "Kelas A";     
-        $npm = "123456789";
+        // Kamu bisa mengganti data ini dengan mengambil dari database nanti
+        $profile = [
+            'nama' => 'Dela Sylvia',
+            'kelas' => 'TI 2024',
+            'npm'   => '2217051048'
+        ];
 
-        // Mengirimkan data ke view
-        return view('profile', compact('nama', 'kelas', 'npm'));
+        // Mengirimkan data ke view profile
+        return view('profile', compact('profile'));
     }
 }
