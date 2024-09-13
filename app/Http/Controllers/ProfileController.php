@@ -10,8 +10,8 @@ class ProfileController extends Controller
     {
         // Kamu bisa mengganti data ini dengan mengambil dari database nanti
         $profile = [
-            'nama' => 'Dela Sylvia',
-            'kelas' => 'TI 2024',
+            'nama' => 'Dela Sylviayani',
+            'kelas' => 'D',
             'npm'   => '2217051048'
         ];
 
