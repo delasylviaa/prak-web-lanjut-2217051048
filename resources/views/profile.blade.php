@@ -4,6 +4,8 @@
     <title>Profile</title>
 </head>
 <body>
-    <h1>Ini halaman profile</h1>
+    <p>Nama : {{ $nama }}</p>
+    <p>Kelas : {{ $kelas }}</p>
+    <p>NPM : {{ $npm }}</p>
 </body>
 </html>
