@@ -11,7 +11,7 @@
             max-width: 400px;
             margin: 50px auto;
             text-align: center;
-            background-color: #f9f9f9;
+            background-color: #e4aec6;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -34,7 +34,7 @@
         .profile-info {
             margin: 10px 0;
             padding: 10px;
-            background-color: #e4aec6;
+            background-color: #f7d4d8;
             border-radius: 10px;
             text-align: left;
         }
