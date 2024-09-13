@@ -34,12 +34,13 @@
         .profile-info {
             margin: 10px 0;
             padding: 10px;
-            background-color: #f0f0f0;
+            background-color: #e4aec6;
             border-radius: 10px;
+            text-align: left;
         }
         .profile-info h3 {
             font-size: 18px;
-            color: #333;
+            color: #a7aed8;
         }
     </style>
 </head>
