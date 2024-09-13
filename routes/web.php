@@ -19,5 +19,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route untuk halaman profile dengan parameter nama, kelas, dan npm
-Route::get('/profile/{nama}/{kelas}/{npm}', [ProfileController::class, 'profile']);
+Route::get('/profile', [ProfileController::class, 'showProfile'])->name('profile');

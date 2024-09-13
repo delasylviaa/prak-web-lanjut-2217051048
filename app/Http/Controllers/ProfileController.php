@@ -6,17 +6,14 @@ use Illuminate\Http\Request;
 
 class ProfileController extends Controller
 {
-    // Fungsi profile yang menerima 3 parameter dari URL
-    public function profile($nama = "", $kelas = "", $npm = "")
+    public function showProfile()
     {
-        // Membuat variabel $data yang berisi informasi nama, kelas, dan npm
-        $data = [
-            'nama' => $nama,
-            'kelas' => $kelas,
-            'npm' => $npm
-        ];
-        
-        // Mengirimkan data ke view profile
-        return view('profile', $data);
+        // Data profil yang akan ditampilkan
+        $nama = "Nama Lengkap"; 
+        $kelas = "Kelas A";     
+        $npm = "123456789";
+
+        // Mengirimkan data ke view
+        return view('profile', compact('nama', 'kelas', 'npm'));
     }
 }
