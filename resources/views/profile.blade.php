@@ -40,7 +40,7 @@
         }
         .profile-info h3 {
             font-size: 18px;
-            color: #a7aed8;
+            color: #869bc7;
         }
     </style>
 </head>
