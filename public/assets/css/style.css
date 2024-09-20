@@ -1,20 +1,74 @@
-/* Mengatur warna latar belakang dan teks untuk body */
+/* Styling umum untuk body */
 body {
-    background-color: #f0f0f0;
     font-family: Arial, sans-serif;
-    color: #333;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-/* Mengatur tampilan gambar */
-img {
-    max-width: 100%;
-    height: auto;
+/* Container untuk form */
+.container {
+    background-color: #ffffff;
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
 }
 
-/* Mengatur heading */
+/* Heading */
 h1 {
-    color: #007bff;
-    text-align: center;
-    font-size: 2.5rem;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Styling form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input text, email, password */
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Efek fokus pada input */
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #28a745;
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+/* Tombol submit */
+.submit-btn {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover efek pada tombol */
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+/* Responsif untuk layar yang lebih kecil */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
 }
