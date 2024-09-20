@@ -10,4 +10,9 @@ class UserController extends Controller
     {
         return view('profile'); // Arahkan ke view 'profile.blade.php'
     }
+
+    public function create() {
+        return view('create_user');
+    }
+    
 }
