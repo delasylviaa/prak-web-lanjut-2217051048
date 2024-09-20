@@ -20,4 +20,4 @@ Route::get('/', function () {
 });
 
 // Route untuk halaman profil pengguna
-Route::get('/profile', [ProfileController::class, 'showProfile'])->name('profile');
+Route::get('/user/profile', [UserController::class, 'profile']);
