@@ -18,6 +18,7 @@ body {
     width: 350px;
     text-align: center;
     border: 2px solid #ff80ab;
+    overflow: hidden; /* Tambahan untuk mencegah overflow */
 }
 
 /* Heading */
@@ -29,11 +30,12 @@ h1 {
 
 /* Gambar kucing */
 .cute-kitten {
-    width: 100px; /* Lebar gambar 100px */
-    height: 100px; /* Tinggi gambar 100px */
-    border-radius: 50%; /* Membuat gambar bulat */
+    width: 80px; /* Atur ulang ukuran jadi lebih kecil */
+    height: 80px; /* Tinggi sesuai dengan lebar */
+    border-radius: 50%;
     margin-bottom: 15px;
     border: 3px solid #ff80ab; /* Border warna pink */
+    object-fit: cover; /* Mengatasi ukuran gambar agar tetap pas */
 }
 
 /* Form */
