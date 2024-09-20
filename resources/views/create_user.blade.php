@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Create User</h1>
-        <img src="https://placekitten.com/200/200" alt="Cute Kitten" class="cute-kitten"> <!-- Gambar kucing -->
+        <img src="{{ asset('assets/img/kucing.png') }}"alt="Deskripsi Gambar">
         <form>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" placeholder="Enter your username">
