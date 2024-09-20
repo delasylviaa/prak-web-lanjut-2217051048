@@ -8,8 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Create User</h1>
-        <img src="{{ asset('assets/img/kucing.png') }}"alt="Deskripsi Gambar">
+        <img src="{{ asset('assets/img/kucing.png') }}"alt="cute kitten" class=".cute-kitten">
         <form>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" placeholder="Enter your username">
