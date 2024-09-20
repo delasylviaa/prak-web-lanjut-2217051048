@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create User</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Hubungkan dengan file CSS eksternal -->
+    <link rel="stylesheet" href="{{asset('assets/css/style.css') }}">
 </head>
 <body>
     <div class="container">
