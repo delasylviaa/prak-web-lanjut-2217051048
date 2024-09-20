@@ -18,7 +18,4 @@ use App\Http\Controllers\ProfileController;
 Route::get('/', function () {
     return view('welcome');
 });
-
-// Route untuk halaman profil pengguna
-Route::get('/user/profile', [UserController::class, 'profile']);
 Route::get('/user/create', [UserController::class, 'create']);
