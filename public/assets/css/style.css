@@ -29,11 +29,11 @@ h1 {
 
 /* Gambar kucing */
 .cute-kitten {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 100px; /* Lebar gambar 100px */
+    height: 100px; /* Tinggi gambar 100px */
+    border-radius: 50%; /* Membuat gambar bulat */
     margin-bottom: 15px;
-    border: 3px solid #ff80ab;
+    border: 3px solid #ff80ab; /* Border warna pink */
 }
 
 /* Form */
