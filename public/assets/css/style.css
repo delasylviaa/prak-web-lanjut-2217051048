@@ -1,7 +1,7 @@
 /* Styling umum untuk body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7f6;
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #fce4ec;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,19 +13,30 @@ body {
 .container {
     background-color: #ffffff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
     text-align: center;
+    border: 2px solid #ff80ab;
 }
 
 /* Heading */
 h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 28px;
+    color: #e91e63;
+    margin-bottom: 15px;
 }
 
-/* Styling form */
+/* Gambar kucing */
+.cute-kitten {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #ff80ab;
+}
+
+/* Form */
 form {
     display: flex;
     flex-direction: column;
@@ -35,26 +46,27 @@ form {
 input[type="text"], input[type="email"], input[type="password"] {
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid #ff80ab;
+    border-radius: 8px;
     width: 100%;
     font-size: 16px;
+    background-color: #fce4ec;
 }
 
 /* Efek fokus pada input */
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
-    border-color: #28a745;
+    border-color: #e91e63;
     outline: none;
-    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+    box-shadow: 0 0 5px rgba(233, 30, 99, 0.5);
 }
 
 /* Tombol submit */
 .submit-btn {
     padding: 10px 15px;
-    background-color: #28a745;
+    background-color: #ff80ab;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
@@ -63,10 +75,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 /* Hover efek pada tombol */
 .submit-btn:hover {
-    background-color: #218838;
+    background-color: #e91e63;
 }
 
-/* Responsif untuk layar yang lebih kecil */
+/* Responsif untuk layar kecil */
 @media (max-width: 600px) {
     .container {
         width: 90%;
