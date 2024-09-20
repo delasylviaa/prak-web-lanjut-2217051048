@@ -1,0 +1,20 @@
+/* Mengatur warna latar belakang dan teks untuk body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Mengatur tampilan gambar */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Mengatur heading */
+h1 {
+    color: #007bff;
+    text-align: center;
+    font-size: 2.5rem;
+}
