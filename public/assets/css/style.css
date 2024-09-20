@@ -1,6 +1,6 @@
 /* Styling umum untuk body */
 body {
-    font-family: 'Comic Sans MS', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #fce4ec;
     display: flex;
     justify-content: center;
@@ -18,7 +18,6 @@ body {
     width: 350px;
     text-align: center;
     border: 2px solid #ff80ab;
-    overflow: hidden; /* Tambahan untuk mencegah overflow */
 }
 
 /* Heading */
@@ -30,12 +29,11 @@ h1 {
 
 /* Gambar kucing */
 .cute-kitten {
-    width: 80px; /* Atur ulang ukuran jadi lebih kecil */
-    height: 80px; /* Tinggi sesuai dengan lebar */
-    border-radius: 50%;
+    max-width: 100%;  /* Gambar menyesuaikan dengan ukuran container */
+    height: auto;     /* Tinggi otomatis menyesuaikan dengan lebar */
     margin-bottom: 15px;
-    border: 3px solid #ff80ab; /* Border warna pink */
-    object-fit: cover; /* Mengatasi ukuran gambar agar tetap pas */
+    border-radius: 15px; /* Membuat sudut gambar sedikit bulat */
+    border: 2px solid #ff80ab; /* Border warna pink */
 }
 
 /* Form */
