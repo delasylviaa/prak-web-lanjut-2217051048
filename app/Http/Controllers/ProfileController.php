@@ -6,16 +6,16 @@ use Illuminate\Http\Request;
 
 class ProfileController extends Controller
 {
-    public function showProfile()
+  
+    public function profile($nama, $npm, $kelas_id)
     {
-        // Kamu bisa mengganti data ini dengan mengambil dari database nanti
-        $profile = [
-            'nama' => 'Dela Sylviayani',
-            'kelas' => 'D',
-            'npm'   => '2217051048'
+        $data = [
+            'nama' => $nama,
+            'npm' => $npm,
+            'nama_kelas' => $kelas_id,
         ];
 
-        // Mengirimkan data ke view profile
-        return view('profile', compact('profile'));
+        return view('profile', $data);
     }
+        
 }

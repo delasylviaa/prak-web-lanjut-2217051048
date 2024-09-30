@@ -5,14 +5,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Kelas;
 use Illuminate\Http\Request;
+use App\Models\UserModel; 
 
 class UserController extends Controller
 {
     public function create()
     {
-        return view('create_user', [
-            $kelas = Kelas::all(),
-        ]);
+        $kelas = Kelas::all(); // Pastikan ini mengembalikan data dari database
+        return view('create_user', ['kelas' => $kelas]);
     }
 
     public function store(Request $request)

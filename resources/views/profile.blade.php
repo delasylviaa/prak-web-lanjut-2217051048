@@ -13,11 +13,11 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f48fb1;
+            background-color: #bacdea;
         }
 
         .profile-card {
-            background-color: #90caf9;
+            background-color: #f990d2;
             border-radius: 15px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
             width: 320px;
@@ -49,7 +49,7 @@
 
         .profile-info td:first-child {
             font-weight: bold;
-            color: #2e3c62;
+            color: #151a3d;
         }
 
         .profile-info td:nth-child(2) {
@@ -57,7 +57,7 @@
         }
 
         .profile-info td:last-child {
-            color: #3c4858;
+            color: #2a3e59;
         }
     </style>
 </head>

@@ -11,8 +11,15 @@ class Kelas extends Model
 
     protected $guarded = ['id'];
 
-    public function user()
+    public function users()
     {
         return $this->hasMany(UserModel::class, 'kelas_id');
+    }
+
+// Remove the create() method from here
+
+    public function create(){
+        return view('create_user', ['kelas' => Kelas::all(),
+    ]);
     }
 }

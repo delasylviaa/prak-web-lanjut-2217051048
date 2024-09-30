@@ -14,7 +14,7 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            background: #bacdea;
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -55,14 +55,14 @@
         }
 
         input[type="text"]:focus {
-            border-color: #f5576c;
+            border-color: #85aae4;
             outline: none;
         }
 
         button {
             width: 100%;
             padding: 12px;
-            background-color: #f5576c;
+            background-color: #85aae4;
             color: white;
             font-size: 16px;
             border: none;
