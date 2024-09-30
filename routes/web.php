@@ -1,23 +1,26 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
 |
-| Ini adalah tempat di mana kamu bisa mendaftarkan route web untuk aplikasi.
-| Route ini akan dimuat oleh RouteServiceProvider dalam grup yang
-| berisi middleware "web".
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
 |
 */
 
-// Route untuk halaman utama (welcome)
 Route::get('/', function () {
     return view('welcome');
 });
 
-// Route untuk halaman profil pengguna
-Route::get('/profile', [ProfileController::class, 'showProfile'])->name('profile');
+Route::get('/user/profile', [UserController::class, "profile"]);
+Route::get('/user/create', [UserController::class , 'create']);
+Route::post('/user/store', [UserController::class, 'store'])->name('user.store');
+Route::get('/profile/{nama}/{npm}/{kelas}', [ProfileController::class, 'profile'])->name('profile');

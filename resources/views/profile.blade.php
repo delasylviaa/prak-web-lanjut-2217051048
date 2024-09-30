@@ -3,70 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
-    <!-- Memuat CSS Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile Card</title>
     <style>
-        .profile-container {
-            max-width: 400px;
-            margin: 50px auto;
-            text-align: center;
-            background-color: #e4aec6;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background-color: #e0e0e0;
-            margin: 0 auto 20px auto; /* Gambar akan terpusat */
-            overflow: hidden;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f48fb1;
         }
-        .profile-image img {
+
+        .profile-card {
+            background-color: #90caf9;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            width: 320px;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .profile-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin: 0 auto 20px;
+        }
+
+        .profile-img img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            border-radius: 50%;
         }
+
         .profile-info {
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #f7d4d8;
-            border-radius: 10px;
-            text-align: left;
+            margin-top: 15px;
         }
-        .profile-info h3 {
-            font-size: 18px;
-            color: #869bc7;
+
+        .profile-info td {
+            padding: 10px 0;
+        }
+
+        .profile-info td:first-child {
+            font-weight: bold;
+            color: #2e3c62;
+        }
+
+        .profile-info td:nth-child(2) {
+            padding: 0 12px;
+        }
+
+        .profile-info td:last-child {
+            color: #3c4858;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="profile-container">
-            <!-- Gambar Profil -->
-            <div class="profile-image">
-                <!-- Ganti URL gambar di sini dengan fotomu -->
-                <img src="{{ asset('images/foto-saya.jpg') }}" alt="Profile Image">
-            </div>
-
-            <!-- Informasi Profil -->
-            <div class="profile-info">
-                <h3>Nama: {{ $profile['nama'] }}</h3>
-            </div>
-            <div class="profile-info">
-                <h3>Kelas: {{ $profile['kelas'] }}</h3>
-            </div>
-            <div class="profile-info">
-                <h3>NPM: {{ $profile['npm'] }}</h3>
-            </div>
+    <div class="profile-card">
+        <div class="profile-img">
+            <img src="foto-saya.jpg" alt="Profile Image">
         </div>
+        <table action="{{ route('user.store') }}" method="POST" class="profile-info">
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><?= $nama ?></td>
+            </tr>
+            <tr>
+                <td>NPM</td>
+                <td>:</td>
+                <td><?= $npm ?></td>
+            </tr>
+            <tr>
+                <td>Kelas</td>
+                <td>:</td>
+                <td>{{$kelas_id ?? 'Kelas tidak ditemukan'}}</td>
+            </tr>
+        </table>
     </div>
-
-    <!-- Memuat Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
