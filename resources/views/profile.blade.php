@@ -64,7 +64,7 @@
 <body>
     <div class="profile-card">
         <div class="profile-img">
-            <img src="foto-saya.jpg" alt="Profile Image">
+            <img src="{{ asset('images/foto-saya.jpg') }}" alt="Profile Image">
         </div>
         <table action="{{ route('user.store') }}" method="POST" class="profile-info">
             <tr>
